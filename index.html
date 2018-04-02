@@ -2,7 +2,7 @@
 <html>
     <!-- BEGIN HEAD -->
     <head>
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	
         <meta charset="utf-8"/>
         <title>Avradeep Bhowmik</title>
@@ -18,6 +18,7 @@
     </head>
 
     <body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         <header class="header">
             <nav class="navbar" role="navigation">
                 <div class="container">
@@ -450,6 +451,25 @@
 
 	  gtag('config', 'UA-19720634-1');
 	</script>-->
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 
     </body>
 </html>
